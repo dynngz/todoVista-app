@@ -25,5 +25,8 @@ A visually **to-do list** inspired by the **Frutiger Aero** aesthetic, blending 
    npm install
    npm start
 
-## 📜 License
+## License
 This project is licensed under the MIT License – feel free to modify and distribute it :)
+
+## 🌼 Live App Link
+https://dynngz.github.io/todoVista-app/ 
