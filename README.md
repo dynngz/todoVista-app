@@ -17,13 +17,13 @@ A visually **to-do list** inspired by the **Frutiger Aero** aesthetic, blending 
 ## 🖥 Preview  
 ![Vista Todo](public/vista-todo.png)  
 
-## 🫧 Installation  
+## Installation  
 1. Clone this repository:  
    ```sh
-   git clone https://github.com/yourusername/frutiger-aero-todo.git
-   cd frutiger-aero-todo
+   git clone https://github.com/dynngz/todoVista-app.git
+   cd todoVista-app
    npm install
    npm start
 
 ## 📜 License
-This project is licensed under the MIT License – feel free to modify and distribute it!
+This project is licensed under the MIT License – feel free to modify and distribute it :)
