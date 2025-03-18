@@ -1,0 +1,15 @@
+<h2 mat-dialog-title>{{ data.title || 'Confirmar' }}</h2>
+<mat-dialog-content>
+  <p>{{ data.message }}</p>
+  
+  @if (data.isEdit) {
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Editar tarea</mat-label>
+      <input matInput [(ngModel)]="editValue" (keyup.enter)="closeDialog(true)">
+    </mat-form-field>
+  }
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="closeDialog(false)">{{ data.cancelText || 'Cancelar' }}</button>
+  <button mat-button color="primary" (click)="closeDialog(true)" cdkFocusInitial>{{ data.confirmText || 'Aceptar' }}</button>
+</mat-dialog-actions>

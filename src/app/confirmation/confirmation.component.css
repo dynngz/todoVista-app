@@ -1,0 +1,57 @@
+:host {
+    display: block;
+  }
+  
+  h2 {
+    color: #0078d7;
+    margin-top: 0;
+    font-weight: 400;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+  }
+  
+  mat-dialog-content {
+    min-width: 300px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  button[mat-button] {
+    background: linear-gradient(to bottom, #e9f4fd 0%, #d3e5f5 100%);
+    border: 1px solid #b6d1e6;
+    color: #333;
+    font-weight: normal;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+  }
+  
+  button[mat-button]:hover {
+    background: linear-gradient(to bottom, #d3e5f5 0%, #c0d9f0 100%);
+    box-shadow: 0 1px 5px rgba(0, 0, 120, 215, 0.3);
+  }
+  
+  button[color="primary"] {
+    color: #0078d7;
+    font-weight: 500;
+  }
+  
+  mat-form-field {
+    margin-top: 10px;
+  }
+  
+  :host {
+    animation: dialogFadeIn 0.3s ease-out;
+  }
+  
+  @keyframes dialogFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

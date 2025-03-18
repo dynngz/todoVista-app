@@ -1,1 +1,180 @@
-/* You can add global styles to this file, and also import other style files */
+.vista-icon {
+    background: linear-gradient(135deg, #7eb9e9 0%, #207ce5 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.7);
+  }
+  
+  .vista-icon mat-icon {
+    color: white;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-container .mat-mdc-form-field-focus-overlay {
+    background: rgba(192, 215, 245, 0.4);
+  }
+  
+  
+  .todo-container {
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+  
+  
+  .todo-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .todo-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+  
+  .todo-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #e9f4fd 0%, #d3e5f5 100%);
+    border-radius: 5px;
+    border: 1px solid #b6d1e6;
+  }
+  
+  .todo-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #d3e5f5 0%, #c0d9f0 100%);
+  }
+  
+
+  .task-content {
+    flex-grow: 1;
+  }
+  
+  .task-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .listing.completed {
+    background: rgba(235, 235, 235, 0.5);
+    border: 1px solid rgba(200, 200, 200, 0.3);
+  }
+  
+
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .error-container mat-icon {
+    color: #0078d7;
+    font-size: 48px;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+  }
+  
+
+  @keyframes vista-glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 120, 215, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(0, 120, 215, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(0, 120, 215, 0.3);
+    }
+  }
+  
+  .listing:hover {
+    animation: vista-glow 1.5s infinite;
+  }
+
+  body {
+    background-image: url('https://preview.redd.it/some-wallpapers-i-found-while-browsing-online-d-v0-tlbmo0b1dp7a1.jpg?width=4321&format=pjpg&auto=webp&s=5699cdecccc7e45d330c1a9762c3738ea662d17b');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  
+  
+  @keyframes ocean-waves {
+    0% { background-position: 0 0; }
+    50% { background-position: 100px 50px; }
+    100% { background-position: 0 0; }
+  }
+  
+  #ocean {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    overflow-y: hidden;
+    z-index: -9;
+  }
+  
+  #ocean::before,
+  #ocean::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: -50px;
+  }
+  
+  #ocean::before {
+    left: -50%;
+    animation: wave 6s linear infinite;
+  }
+  
+  #ocean::after {
+    left: -100%;
+    animation: wave 6s linear infinite reverse;
+  }
+  
+  @keyframes wave {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(50%); }
+    100% { transform: translateX(0); }
+  }
+  
+  
+  /* Burbujas animadas */
+  @keyframes bubbles {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+  }
+  
+  .bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    animation: bubbles 4s infinite ease-in-out;
+  }
+  
+  .bubble:nth-child(1) { left: 10%; animation-duration: 6s; }
+  .bubble:nth-child(2) { left: 20%; animation-duration: 4s; }
+  .bubble:nth-child(3) { left: 40%; animation-duration: 5s; }
+  .bubble:nth-child(4) { left: 60%; animation-duration: 7s; }
+  .bubble:nth-child(5) { left: 80%; animation-duration: 6s; }
+  
+
