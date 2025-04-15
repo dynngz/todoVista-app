@@ -1,6 +1,7 @@
 # 🌊 Frutiger aero to-do list  
 
 Retro Windows-inspired interface
+Live App Link: https://dynngz.github.io/todoVista-app/ 
 
 ## 🌱 Features  
 - Glassy elements and vibrant colors,  keeps tasks saved even after a refresh and between sessions. 
@@ -16,6 +17,3 @@ Retro Windows-inspired interface
 
 ## License
 This project is licensed under the MIT License – feel free to modify and distribute it :)
-
-## 🌼 Live App Link
-https://dynngz.github.io/todoVista-app/ 
